@@ -44,6 +44,7 @@
 .advertising {
     display: flex;
     flex-wrap: wrap;
+    padding-left: 0;
 }
 .advertising__list {
     width: 370px;
@@ -52,8 +53,8 @@
     &:nth-last-child(-n+3) {
         margin-bottom: 0;
     }
-    &:not(:nth-child(3n)) {
-            margin-right: 30px;
+    &:nth-child(3n+3) {
+            margin-right: 0;
         }
         &:hover .advertising__panel {
             transform: translateX(0);

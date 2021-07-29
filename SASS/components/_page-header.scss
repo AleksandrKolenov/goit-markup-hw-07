@@ -61,16 +61,41 @@ font-family: Raleway;
     line-height: 1.1;
     letter-spacing: 0.02em;
     margin: 0px;
+    text-decoration: none;
 }
-.site-nav__link--current::after {
+    .site-nav__link--current::after {
     content: "";
     width: 48px;
     height: 4px;
-    left: 0;
     top: 76px;
     border-radius: 2px;
     position: absolute;
-    left: 0;
+    bottom: 0;
+    background-color: $color-accent;
+}
+
+.site-nav__link--current1 {
+    position: relative;
+    display: flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 0px;
+    color: $color-accent;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    margin: 0px;
+    text-decoration: none;
+}
+.site-nav__link--current1::after {
+    content: "";
+    width: 78px;
+    height: 4px;
+    top: 76px;
+    border-radius: 2px;
+    position: absolute;
     bottom: 0;
     background-color: $color-accent;
 }
@@ -117,15 +142,18 @@ transition-property: color;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 &:hover, &:focus {
     color: $color-accent;
+    
 }
 }
 .contact-icon {
     margin-right: 10px;
+    fill: $primery-tex-color;
+    fill: currentColor;
     align-items: center;
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    &:hover, &:focus {
+    &:hover {
         fill: $color-accent;
     }
 }

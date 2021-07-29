@@ -57,6 +57,8 @@ padding-top: 94px;
 .clients__image {
     width: 106;
     height: 60;
+    fill: $primery-tex-color;
+    fill: currentColor;
     &:hover {
         fill: $color-accent;
     }

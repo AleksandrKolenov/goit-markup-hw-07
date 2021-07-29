@@ -1,7 +1,7 @@
 .footer {
     padding-top: 60px;
     padding-bottom: 60px;
-    background-color: $title-tex-color;
+    background-color: $header-footer-color;
 }
 .footer__container {
     margin-left: auto;
@@ -26,6 +26,7 @@
     font-size: 26px;
     line-height: 1.2;
     letter-spacing: 0.03em;
+    text-decoration: none;
 }
 .footer__white {
     color: $primery-bg-color;
@@ -51,9 +52,10 @@
     padding-left: 0px;
 } 
 .footer__feedback {    
-    color: $primery-tex-color;
+    color: rgba(255, 255, 255, 0.6);
     font-style: normal;
     font-weight: normal;
+    text-decoration: none;
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
@@ -66,6 +68,7 @@
 }
 .footer__item {
     margin-bottom: 9px;
+    
 }
 
 .footer__join {
