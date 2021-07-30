@@ -29,7 +29,7 @@
     font-size: 16px;
     line-height: 1.2;
     letter-spacing: 0.03em;
-    padding-left: 0px;
+    @extend %list;
     margin: 0px;   
 }
 .team__item:not(:last-child) {
@@ -80,6 +80,7 @@
     border-radius: 50%;
     &:hover, &:focus {
         background-color: $color-accent;   
+        color: $primery-bg-color;
     }
  }
  .card-set__icon {

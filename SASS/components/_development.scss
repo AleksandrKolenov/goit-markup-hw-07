@@ -20,9 +20,8 @@
     letter-spacing: 0.03em;
 }
 .development__list {
-    padding-left: 0px;
-    margin: 0px;
-        display: flex;
+    @extend %list;
+    display: flex;
 }
 .development__icon:not(:last-child) {
     margin-right: 30px;
@@ -33,7 +32,7 @@
    margin-bottom: 0px;
 }
 .development__text {
-        position: absolute;
+    position: absolute;
     width: 370px;
     height: 70px;
     font-weight: 700;

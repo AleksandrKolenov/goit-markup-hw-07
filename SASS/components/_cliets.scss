@@ -26,7 +26,7 @@ padding-top: 94px;
     padding-left: 0px;
     margin-top: 0px;
     margin-bottom: 0px;
-    list-style: none;
+    @extend %list;
 }
 .clients__partner:not(:last-child) {
     margin-right: 30px;
@@ -57,7 +57,7 @@ padding-top: 94px;
 .clients__image {
     width: 106;
     height: 60;
-    fill: $primery-tex-color;
+    color: $icon-color;
     fill: currentColor;
     &:hover {
         fill: $color-accent;

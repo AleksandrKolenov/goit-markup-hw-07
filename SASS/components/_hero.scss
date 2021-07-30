@@ -28,7 +28,7 @@
     max-width: 1200px;
 }
 .hero__title {
-font-family: Roboto;
+font-family: $first-font;
 font-style: normal;
 font-weight: 900;
 font-size: 44px;
@@ -43,7 +43,7 @@ text-transform: uppercase;
     display: inline-block;
     color: $primery-bg-color;
     background-color: $color-accent;
-        font-style: normal;
+    font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.9;
@@ -112,7 +112,7 @@ text-transform: uppercase;
     margin: 0;
 }
 .application__list {
-    font-family: Roboto;
+font-family: $first-font;
 font-style: normal;
 font-weight: bold;
 font-size: 20px;
@@ -204,7 +204,7 @@ letter-spacing: 0.03em;
     border: 2px solid #212121;
 }
 .topic__white {
-    font-family: Roboto;
+    font-family: $first-font;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -213,7 +213,7 @@ letter-spacing: 0.03em;
     letter-spacing: 0.03em;
 }
 .topic__blue {
-        width: 400px;
+    width: 400px;
     height: 24px;
     font-weight: 400;
     font-size: 14px;
@@ -222,7 +222,7 @@ letter-spacing: 0.03em;
     color: $color-accent;
 }
 .topic__btn {
-        font-weight: bold;
+    font-weight: bold;
     font-size: 16px;
     line-height: 1.87;
     padding: 10px 55px;

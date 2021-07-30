@@ -19,8 +19,8 @@
 .footer__logo {
     display: flex;
     align-items: center;
-        color: $color-accent;
-    font-family: Raleway;
+    color: $color-accent;
+    font-family: $logo-font;
     font-style: normal;
     font-weight: bold;
     font-size: 26px;
@@ -30,7 +30,7 @@
 }
 .footer__white {
     color: $primery-bg-color;
-    font-family: Raleway;
+    font-family: $logo-font;
     font-style: normal;
     font-weight: bold;
     font-size: 26px;
@@ -49,7 +49,7 @@
 .footer__list {
     margin-top: 9px;
     margin-bottom: 0px;
-    padding-left: 0px;
+    @extend %list;
 } 
 .footer__feedback {    
     color: rgba(255, 255, 255, 0.6);
@@ -100,6 +100,7 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
     &:hover {
         background-color: $color-accent;
     }

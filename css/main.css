@@ -1,4 +1,11 @@
 @charset "UTF-8";
+.page-header__logo, .site-nav, .site-nav__link--current, .site-nav__link--current1, .development__list, .team__list, .clients__list, .footer__list, .advertising {
+  list-style-type: none;
+  text-decoration: none;
+  margin: 0;
+  padding-left: 0;
+}
+
 /*
 Document
 ========
@@ -298,18 +305,17 @@ li {
           align-items: center;
   margin-right: 93px;
   color: #2196F3;
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
-  text-decoration: none;
 }
 
 .page-header__text {
   color: #212121;
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 26px;
@@ -324,8 +330,6 @@ li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-left: 0;
-  margin: 0;
 }
 
 .site-nav__item:not(:last-child) {
@@ -346,8 +350,6 @@ li {
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.02em;
-  margin: 0px;
-  text-decoration: none;
 }
 
 .site-nav__link--current::after {
@@ -368,7 +370,6 @@ li {
   display: flex;
   padding-top: 32px;
   padding-bottom: 32px;
-  padding-left: 0px;
   color: #2196f3;
   font-style: normal;
   font-weight: 500;
@@ -376,7 +377,7 @@ li {
   line-height: 1.1;
   letter-spacing: 0.02em;
   margin: 0px;
-  text-decoration: none;
+  fill: currentColor;
 }
 
 .site-nav__link--current1::after {
@@ -392,7 +393,7 @@ li {
 
 .site-nav__link {
   color: #212121;
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -426,7 +427,7 @@ li {
 }
 
 .contact__link {
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -455,16 +456,6 @@ li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transition-property: color;
-  transition-property: color;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.contact-icon:hover {
-  fill: #2196f3;
 }
 
 .hero {
@@ -500,7 +491,7 @@ li {
 }
 
 .hero__title {
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 900;
   font-size: 44px;
@@ -608,7 +599,7 @@ li {
 }
 
 .application__list {
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
@@ -728,7 +719,7 @@ li {
 }
 
 .topic__white {
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -867,8 +858,6 @@ li {
 }
 
 .development__list {
-  padding-left: 0px;
-  margin: 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -947,7 +936,6 @@ li {
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.03em;
-  padding-left: 0px;
   margin: 0px;
 }
 
@@ -1017,6 +1005,7 @@ li {
 
 .card-set__link:hover, .card-set__link:focus {
   background-color: #2196f3;
+  color: #ffffff;
 }
 
 .card-set__icon {
@@ -1056,7 +1045,6 @@ li {
   padding-left: 0px;
   margin-top: 0px;
   margin-bottom: 0px;
-  list-style: none;
 }
 
 .clients__partner:not(:last-child) {
@@ -1101,7 +1089,7 @@ li {
 .clients__image {
   width: 106;
   height: 60;
-  fill: #757575;
+  color: #AFB1B8;
   fill: currentColor;
 }
 
@@ -1142,7 +1130,7 @@ li {
       -ms-flex-align: center;
           align-items: center;
   color: #2196f3;
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 26px;
@@ -1153,7 +1141,7 @@ li {
 
 .footer__white {
   color: #ffffff;
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 26px;
@@ -1174,7 +1162,6 @@ li {
 .footer__list {
   margin-top: 9px;
   margin-bottom: 0px;
-  padding-left: 0px;
 }
 
 .footer__feedback {
@@ -1244,6 +1231,7 @@ li {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
 }
 
 .footer__badge:hover {
@@ -1353,7 +1341,7 @@ li {
   display: block;
   color: #212121;
   background-color: #F5F4FA;
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 100%;
@@ -1376,6 +1364,8 @@ li {
 .btn__primery:hover, .btn__primery:focus {
   background-color: #2196f3;
   color: #ffffff;
+  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .advertising {
@@ -1384,7 +1374,6 @@ li {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding-left: 0;
 }
 
 .advertising__list {
@@ -1404,6 +1393,11 @@ li {
 .advertising__list:hover .advertising__panel {
   -webkit-transform: translateX(0);
           transform: translateX(0);
+}
+
+.advertising__list:hover {
+  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .advertising__box {
@@ -1457,7 +1451,7 @@ li {
   margin-top: 0px;
   margin-bottom: 0px;
   color: #212121;
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;

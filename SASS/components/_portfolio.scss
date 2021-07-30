@@ -23,7 +23,7 @@
     display: block;
     color: $title-tex-color;
     background-color: $primery-main-color;
-    font-family: Roboto;
+    font-family: $first-font;
     font-style: normal;
     font-weight: 500;
     font-size: 100%;
@@ -39,12 +39,13 @@
     &:hover, &:focus { 
     background-color: $color-accent;
     color: $primery-bg-color;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     }
 }
 .advertising {
     display: flex;
     flex-wrap: wrap;
-    padding-left: 0;
+    @extend %list;
 }
 .advertising__list {
     width: 370px;
@@ -59,6 +60,9 @@
         &:hover .advertising__panel {
             transform: translateX(0);
         }
+         &:hover {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
     }
 
 .advertising__box {
@@ -69,7 +73,7 @@
     color: secondary-img-color;
 }
 .advertising__panel {
-        position: absolute;
+    position: absolute;
     bottom: 0px;
     width: 100%;
     height: 100%;
@@ -101,7 +105,7 @@
     margin-top: 0px;
     margin-bottom: 0px;
     color: $title-tex-color;
-    font-family: Roboto;
+    font-family: $first-font;
 font-style: normal;
 font-weight: 700;
 font-size: 18px;
